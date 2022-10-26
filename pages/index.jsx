@@ -1,12 +1,14 @@
 import Head from "next/head"
+import Header from "../components/header/Header"
 
 export default function Home() {
   return (
     <>
     <Head>
       <title>JMJ taxes</title>
+      <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
     </Head>
-    <h1>Taxes</h1>
+    <Header />
     </>
   )
 }

@@ -7,3 +7,14 @@
 body {
   font-family: 'Lato', sans-serif;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  transition: all 400ms ease;
+}
