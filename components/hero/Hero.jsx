@@ -4,7 +4,7 @@ import style from "./Hero.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 
-import illus from "../../public/img/illustration.svg";
+import illus from "../../public/img/Illustration.svg";
 
 const Hero = () => {
   return (
