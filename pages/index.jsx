@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Header from "../components/header/Header"
+import Hero from "../components/hero/Hero"
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
       <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
     </Head>
     <Header />
+    <main>
+      <Hero />
+    </main>
     </>
   )
 }
