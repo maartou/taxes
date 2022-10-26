@@ -1,0 +1,103 @@
+@use '../../styles/variables.scss';
+
+.section {
+    padding: 4em 0 5em 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.img_container {
+    width: 90%;
+    max-width: 33rem;
+    margin: 0 auto;
+}
+
+.contenido {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+
+    p {
+        color: variables.$grey;
+    }
+}
+
+.btn_group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn1 {
+    @include variables.btn_primary
+}
+
+.btn2 {
+    @include variables.btn_secondary
+}
+
+@media screen and (min-width: 768px) {
+    .section {
+        padding: 3em 0 4em 0;
+    }
+    .container {
+        width: 80%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .section {
+        height: 90vh;
+        display: flex;
+        padding: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        align-self: center;
+        font-size: 19px;
+        gap: 5rem;
+        width: 85%;
+    }
+
+    .img_container {
+        order: 2;
+        width: 100%;
+    }
+
+    .contenido {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .section {
+        height: 90vh;
+        display: flex;
+    }
+
+    .container {
+        gap: 3rem;
+        width: 80%;
+    }
+
+    .img_container {
+        max-width: 44rem;
+    }
+
+    .contenido {
+        font-size: 25px;
+    }
+}
