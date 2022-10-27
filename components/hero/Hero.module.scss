@@ -1,7 +1,22 @@
 @use '../../styles/variables.scss';
 
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
 .section {
     padding: 4em 0 5em 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .container {
@@ -17,6 +32,7 @@
     width: 90%;
     max-width: 33rem;
     margin: 0 auto;
+    animation: float 3s ease-in-out infinite;
 }
 
 .contenido {
@@ -44,12 +60,74 @@
     @include variables.btn_secondary
 }
 
+.circle_container {
+    position: absolute;
+    width: 4rem;
+    bottom: 1rem;
+    right: 2rem;
+}
+
+.circle_container_2 {
+    display: none;
+}
+
+////////////////////// Circles ////////////////////////
+
+.c1 {
+    width: 5em;
+    height: 5em;
+    background: variables.$secondary;
+    position: absolute;
+    border-radius: 100%;
+
+    top: 2rem;
+    right: -2.5rem;
+}
+
+.c2{
+    width: 3em;
+    height: 3em;
+    background: variables.$four;
+    position: absolute;
+    border-radius: 100%;
+
+    top: 5rem;
+    right: -1.5rem;
+}
+
+.c3 {
+    width: 5em;
+    height: 5em;
+    background: variables.$four;
+    position: absolute;
+    border-radius: 100%;
+
+    bottom: 2rem;
+    left: -2.5rem;
+    z-index: -1;
+}
+
+.c4{
+    width: 3em;
+    height: 3em;
+    background: variables.$secondary;
+    position: absolute;
+    border-radius: 100%;
+
+    bottom: 5.5rem;
+    left: -1.5rem;
+}
+
 @media screen and (min-width: 768px) {
     .section {
         padding: 3em 0 4em 0;
     }
     .container {
         width: 80%;
+        font-size: 18px;
+    }
+
+    .c1, .c2, .c3, .c4 {
         font-size: 18px;
     }
 }
@@ -78,6 +156,14 @@
 
     .contenido {
         align-items: flex-start;
+    }
+
+    .circle_container_2 {
+        display: block;
+        position: absolute;
+        width: 6rem;
+        top: 1rem;
+        left: 2rem;
     }
 }
 
