@@ -1,0 +1,128 @@
+$grey: #696969;
+$principal: #002d5c;
+$secondary: #276092;
+$terciary: #288DC1;
+$four: #9ACAEB;
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  transition: all 400ms ease;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2em;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1.7em;
+  text-align: center;
+}
+
+small {
+  color: #002d5c;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+#about_section {
+
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    margin-top: 2rem;
+    cursor: default;
+  }
+
+  .item {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 1rem;
+
+    padding: 1rem;
+    transition: all 400ms ease;
+
+    &:hover {
+      color: white;
+      background: $principal;
+
+      .icon {
+        color: $four;
+      }
+    }
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .icon {
+      color: #002d5c;
+      font-size: 2em;
+    }
+
+    h4 {
+      font-size: 2em;
+      font-weight: 900;
+    }
+
+
+  }
+
+  .body {
+    h4 {
+      font-weight: 400;
+      font-size: 1em;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 60%;
+      margin: 2rem auto 0 auto;
+    }
+
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  section {
+    margin-bottom: 6rem;
+  }
+}
