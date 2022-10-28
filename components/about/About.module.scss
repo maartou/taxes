@@ -1,0 +1,23 @@
+@use '../../styles/variables.scss';
+
+.section {
+    background: rgb(239, 239, 239);
+    padding: 3rem 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+
+    p {
+        color: variables.$grey ;
+        max-width: 50rem;
+    }
+}

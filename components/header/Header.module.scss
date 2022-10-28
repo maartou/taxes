@@ -1,0 +1,91 @@
+@use "../../styles/variables.scss";
+
+.header {
+  padding: 0.5rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image_container {
+  width: 12em;
+}
+
+.btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 2.8em;
+  color: variables.$principal;
+}
+
+.nav {
+  margin: 1rem auto;
+
+  display: flex;
+  justify-content: space-evenly;
+
+  a {
+    color: variables.$grey;
+    &:hover {
+      color: #288dc1;
+    }
+  }
+}
+
+.wide_nav {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .image_container {
+    width: 15rem;
+  }
+
+  .icon {
+    font-size: 3.5em;
+  }
+
+  .nav {
+    margin: 1.5rem auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .header {
+        padding: 1rem 1.5rem;
+    }
+
+    .btn, .nav {
+        display: none;
+    }
+
+    .wide_nav {
+        display: block;
+        display: flex;
+        gap: 1.5rem;
+
+        a {
+        color: variables.$grey;
+        font-size: 1.1rem;
+        &:hover {
+            color: #288dc1;
+          }
+
+        }
+    }
+
+
+}

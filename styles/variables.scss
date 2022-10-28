@@ -1,0 +1,44 @@
+@mixin btn_primary() {
+  background: $principal;
+  color: white;
+  border: 1px solid transparent;
+  padding: 1em 2.8em;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: all 400ms ease;
+
+  &:hover {
+    background: transparent;
+    border-color: $principal;
+    color: $principal;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 1em 3.2em;
+  }
+}
+
+@mixin btn_secondary() {
+  background: transparent;
+  color: $principal;
+  padding: 1em 2.8em;
+  border-radius: 8px;
+  border: 1px solid $principal;
+  font-size: 1.1em;
+  transition: all 400ms ease;
+
+  &:hover {
+    background: $principal;
+    color: white;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 1em 3.2em;
+  }
+}
+
+$grey: #696969;
+$principal: #002d5c;
+$secondary: #276092;
+$terciary: #288DC1;
+$four: #9ACAEB;
