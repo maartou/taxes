@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Data = (props) => {
-  return (
-    <>
-    {props.children}
-    </>
-  )
-}
+  const [open, setOpen] = useState(false);
 
-export default Data
+  const trigger = () => {
+    setOpen(!open);
+  };
+
+  return (
+    <article id="service-card">
+      <div className="title">
+        <h3>{props.title}</h3>
+        <p>{props.short}</p>
+        {open && props.children}
+      </div>
+
+      {open ? (
+        <button onClick={trigger}> Leer menos </button>
+      ) : (
+        <button onClick={trigger}>Leer más</button>
+      )}
+    </article>
+  );
+};
+
+export default Data;

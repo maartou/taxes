@@ -1,13 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Data from "./Data";
 
 const Services = () => {
-  const [open, setOpen] = useState(false);
-
-  const trigger = () => {
-    setOpen(!open);
-  };
-
   return (
     <section id="services-section">
       <div className="title">
@@ -16,137 +10,63 @@ const Services = () => {
       </div>
 
       <div className="container">
-        <div className="item">
-          <h3>Taxes</h3>
+        <Data title="Taxes individuales" short="Descripción - texto de prueba">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad facere
-            provident fugit ducimus sequi excepturi! Fugiat eius ipsam sunt
-            incidunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            aspernatur reiciendis doloremque qui ad mollitia eveniet quod
+            temporibus quis tenetur earum accusamus itaque, rem distinctio
+            eligendi delectus doloribus et recusandae.
           </p>
 
-          {/* Datos desplegables */}
-          {open && (
-            <Data>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                mollitia architecto animi nostrum temporibus, quas natus unde
-                deleniti vitae vel.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-                laboriosam est quod perferendis exercitationem sit expedita
-                quibusdam! Rem, laudantium perferendis rerum nisi quam atque
-                sequi ullam, praesentium aliquam voluptatem voluptas.
-              </p>
-            </Data>
-          )}
-
-          {/* Evento para desplegar */}
-          {open ? (
-            <button onClick={trigger}>Leer menos</button>
-          ) : (
-            <button onClick={trigger}>Leer más...</button>
-          )}
-        </div>
-
-        <div className="item">
-          <h3>Preparación de documentos</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad facere
-            provident fugit ducimus sequi excepturi! Fugiat eius ipsam sunt
-            incidunt?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+            corporis facere vero magni impedit voluptates velit aspernatur quas
+            rerum accusamus.
           </p>
+        </Data>
 
-          {/* Datos desplegables */}
-          {open && (
-            <Data>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                mollitia architecto animi nostrum temporibus, quas natus unde
-                deleniti vitae vel.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-                laboriosam est quod perferendis exercitationem sit expedita
-                quibusdam! Rem, laudantium perferendis rerum nisi quam atque
-                sequi ullam, praesentium aliquam voluptatem voluptas.
-              </p>
-            </Data>
-          )}
-
-          {/* Evento para desplegar */}
-          {open ? (
-            <button onClick={trigger}>Leer menos</button>
-          ) : (
-            <button onClick={trigger}>Leer más...</button>
-          )}
-        </div>
-
-        <div className="item">
-          <h3>Creación de empresas</h3>
+        <Data
+          title="Creación de empresas"
+          short="Descripción - texto dummy - relleno"
+        >
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad facere
-            provident fugit ducimus sequi excepturi! Fugiat eius ipsam sunt
-            incidunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ut
+            aperiam velit maiores! Culpa molestiae exercitationem dolor eius
+            autem enim.
           </p>
-
-          {/* Datos desplegables */}
-          {open && (
-            <Data>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                mollitia architecto animi nostrum temporibus, quas natus unde
-                deleniti vitae vel.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-                laboriosam est quod perferendis exercitationem sit expedita
-                quibusdam! Rem, laudantium perferendis rerum nisi quam atque
-                sequi ullam, praesentium aliquam voluptatem voluptas.
-              </p>
-            </Data>
-          )}
-
-          {/* Evento para desplegar */}
-          {open ? (
-            <button onClick={trigger}>Leer menos</button>
-          ) : (
-            <button onClick={trigger}>Leer más...</button>
-          )}
-        </div>
-
-        <div className="item">
-          <h3>Otros servicios</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad facere
-            provident fugit ducimus sequi excepturi! Fugiat eius ipsam sunt
-            incidunt?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, natus.
           </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eos
+          perspiciatis molestiae id saepe.
+        </Data>
 
-          {/* Datos desplegables */}
-          {open && (
-            <Data>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-                mollitia architecto animi nostrum temporibus, quas natus unde
-                deleniti vitae vel.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-                laboriosam est quod perferendis exercitationem sit expedita
-                quibusdam! Rem, laudantium perferendis rerum nisi quam atque
-                sequi ullam, praesentium aliquam voluptatem voluptas.
-              </p>
-            </Data>
-          )}
+        <Data title="Asilo" short="Asilo politico para ayudarlo">
+          <h4>Las razones por las cúales debe solicitar asilo politico son:</h4>
+          <ul>
+            <li>Raza</li>
+            <li>Religión</li>
+            <li>Nacionalidad</li>
+            <li>Opinión politica</li>
+            <li>Pertenecer a un grupo social</li>
+          </ul>
+        </Data>
 
-          {/* Evento para desplegar */}
-          {open ? (
-            <button onClick={trigger}>Leer menos</button>
-          ) : (
-            <button onClick={trigger}>Leer más...</button>
-          )}
-        </div>
+        <Data title="Permiso de trabajo por primera vez y renovación" short="description text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequuntur quasi laudantium temporibus expedita nulla inventore iusto facere tempora, dolore numquam soluta recusandae quis odio fugit, ratione eum sapiente minus.</p>
+        </Data>
+
+        <Data title="TPS y re-registración" short="description text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequuntur quasi laudantium temporibus expedita nulla inventore iusto facere tempora, dolore numquam soluta recusandae quis odio fugit, ratione eum sapiente minus.</p>
+        </Data>
+
+        <Data title="Residencia y ciudadanía" short="description text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequuntur quasi laudantium temporibus expedita nulla inventore iusto facere tempora, dolore numquam soluta recusandae quis odio fugit, ratione eum sapiente minus.</p>
+        </Data>
+
+        <Data title="Soporte en caso de accidente de tránsito o laboral" short="description text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequuntur quasi laudantium temporibus expedita nulla inventore iusto facere tempora, dolore numquam soluta recusandae quis odio fugit, ratione eum sapiente minus.</p>
+        </Data>
       </div>
     </section>
   );
