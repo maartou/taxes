@@ -11,12 +11,14 @@ const About = () => {
       <div className={style.container}>
         <div className={style.title}>
           <small>Sobre nosotros</small>
-          <h2>Título secundario - sobre nosotros</h2>
+          <h2>
+            Nos comprometemos con la situacion de cada cliente para ayudarlo a
+            gestionar su solicitud de manera efectiva,
+            <span> logrando alcanzar la meta deseada.</span>
+          </h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Perferendis, earum libero exercitationem minima, incidunt nulla ab
-            odio enim fugit debitis asperiores dolore necessitatibus veritatis
-            doloribus, voluptatum aperiam quaerat nesciunt et.
+            Tenemos varios años al servicio de los clientes con la finalidad de
+            preparar varias formas migratorias, taxes individuales, creación de empresas y mucho más.
           </p>
         </div>
 

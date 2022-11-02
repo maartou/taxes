@@ -16,9 +16,21 @@
     align-items: center;
     gap: .8rem;
 
+    span {
+        color: variables.$secondary;
+    }
+
     p {
         color: variables.$grey ;
         max-width: 50rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title {
+        h2 {
+            max-width: 50%;
+        }
     }
 }
 

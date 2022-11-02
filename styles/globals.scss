@@ -138,6 +138,11 @@ p {
 }
 
 #services-section {
+
+  p {
+    line-height: 1.6rem;
+  }
+
   .title {
     width: 90%;
     margin: 0 auto;
@@ -180,7 +185,7 @@ p {
 
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: .8rem;
 
     align-items: flex-start;
   }
