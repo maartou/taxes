@@ -8,6 +8,28 @@
 .container {
     width: 90%;
     margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.img_container {
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 auto;
+    height: 20rem;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    p {
+        margin-top: 1rem;
+    }
 }
 
 .title {
@@ -29,9 +51,14 @@
 @media screen and (min-width: 1024px) {
     .title {
         h2 {
-            max-width: 50%;
+            max-width: 85%;
         }
     }
+
+    .container {
+        grid-template-columns: 2fr 1fr;
+    }
+
 }
 
 

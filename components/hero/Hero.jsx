@@ -32,9 +32,7 @@ const Hero = () => {
         <div className={style.contenido}>
           <h1>Somos preparadores de documentos y formularios migratorios</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fugit
-            ducimus hic veritatis vitae vel cumque? Laboriosam optio iusto at
-            suscipit velit aliquid maiores voluptatum?
+            Gestionames de una manera muy fácil y segura todos tus trámites, desde taxes, creación de empresas, asilo politico, TPS y mucho más!
           </p>
           <div className={style.btn_group}>
             <Link href="#servicios" className={style.btn1}>
