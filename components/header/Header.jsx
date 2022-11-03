@@ -23,9 +23,9 @@ const Header = () => {
         </div>
 
         <nav className={style.wide_nav}>
-          <Link href="#"> Nosotros </Link>
-          <Link href="#"> Servicios </Link>
-          <Link href="#"> Contacto </Link>
+          <Link href="#nosotros"> Nosotros </Link>
+          <Link href="#servicios"> Servicios </Link>
+          <Link href="#contacto"> Contacto </Link>
         </nav>
 
         <button className={style.btn}>

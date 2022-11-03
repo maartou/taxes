@@ -37,13 +37,13 @@ const Hero = () => {
             suscipit velit aliquid maiores voluptatum?
           </p>
           <div className={style.btn_group}>
-            <Link href="#" className={style.btn1}>
+            <Link href="#servicios" className={style.btn1}>
               {" "}
-              Btn 1
+              Servicios
             </Link>
-            <Link href="#" className={style.btn2}>
+            <Link href="#contacto" className={style.btn2}>
               {" "}
-              Btn 2
+              Contacto
             </Link>
           </div>
         </div>

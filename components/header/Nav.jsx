@@ -5,9 +5,9 @@ import style from './Header.module.scss'
 const Nav = () => {
   return (
     <nav className={style.nav}>
-        <Link href="#"> Nosotros </Link>
-        <Link href="#"> Servicios </Link>
-        <Link href="#"> Contacto </Link>
+        <Link href="#nosotros"> Nosotros </Link>
+        <Link href="#servicios"> Servicios </Link>
+        <Link href="#contacto"> Contacto </Link>
     </nav>
   )
 }

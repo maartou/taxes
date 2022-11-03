@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section className={style.section} id="about_section">
       <div className={style.container}>
-        <div className={style.title}>
+        <div className={style.title} id="nosotros">
           <small>Sobre nosotros</small>
           <h2>
             Nos comprometemos con la situacion de cada cliente para ayudarlo a
@@ -39,17 +39,17 @@ const About = () => {
               <h4>+25</h4>
             </div>
             <div className="body">
-              <h4>Trabajos exitosos</h4>
+              <h4>Trámites exitosos</h4>
             </div>
           </div>
 
           <div className="item">
             <div className="header">
               <HiOutlineDocumentText className="icon" />
-              <h4>+5</h4>
+              <h4>+7</h4>
             </div>
             <div className="body">
-              <h4>Formas de trabajo</h4>
+              <h4>Servicios disponibles</h4>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import Data from "./Data";
 const Services = () => {
   return (
     <section id="services-section">
-      <div className="title">
+      <div className="title" id="servicios">
         <small>Nuestros servicios</small>
         <h2>Somos especialistas en:</h2>
       </div>

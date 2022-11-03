@@ -8,9 +8,7 @@
   transition: all 400ms ease;
 
   &:hover {
-    background: transparent;
-    border-color: $principal;
-    color: $principal;
+    scale: 1.1;
   }
 
   @media screen and (min-width: 1024px) {
@@ -28,8 +26,7 @@
   transition: all 400ms ease;
 
   &:hover {
-    background: $principal;
-    color: white;
+    scale: 1.1;
   }
 
   @media screen and (min-width: 1024px) {

@@ -10,6 +10,10 @@ $four: #9acaeb;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -66,7 +70,8 @@ p {
   }
 
   .item {
-    background: white;
+    background: $principal;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,12 +82,7 @@ p {
     transition: all 400ms ease;
 
     &:hover {
-      color: white;
-      background: $principal;
-
-      .icon {
-        color: $four;
-      }
+      scale: 1.1;
     }
   }
 
@@ -92,7 +92,7 @@ p {
     gap: 5px;
 
     .icon {
-      color: #002d5c;
+      color: $four;
       font-size: 2em;
     }
 
