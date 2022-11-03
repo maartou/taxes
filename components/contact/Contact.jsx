@@ -9,7 +9,7 @@ const Contact = () => {
     <section id="contact_section">
       <div className="container">
         <div className="content">
-          <h2>Contáctanos</h2>
+          <h2 id="contacto">Contáctanos</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
             molestias itaque iste ad cum. Dolorem consectetur quisquam debitis
