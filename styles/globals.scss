@@ -166,6 +166,7 @@ p {
   @media screen and (min-width: 1024px) {
     .container {
       grid-template-columns: 1fr 1fr;
+      align-items: flex-start;
       width: 80%;
     }
   }
@@ -178,6 +179,12 @@ p {
   border-radius: 1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 1rem;
+
 
   .title {
     h3 {
@@ -185,10 +192,6 @@ p {
       font-weight: 900;
       font-size: 1.4rem;
     }
-
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
 
     align-items: flex-start;
   }
@@ -224,7 +227,6 @@ p {
     border-radius: 8px;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    margin: 1rem 0 0 1rem;
   }
 }
 
