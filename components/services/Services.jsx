@@ -115,13 +115,33 @@ const Services = () => {
           </p>
         </Data>
 
-        <Data title="Residencia y ciudadanía" short="description text">
+        <Data
+          title="Ciudadanía y naturalización"
+          short="La ciudadanía es un vínculo en común que une a las personas a los ideales cívicos y la creencia en los derechos y libertades garantizadas en la Constitución de Estados Unidos."
+        >
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            consequuntur quasi laudantium temporibus expedita nulla inventore
-            iusto facere tempora, dolore numquam soluta recusandae quis odio
-            fugit, ratione eum sapiente minus.
+            Convertirse en ciudadano estadounidense es una de las decisiones más
+            importantes de un inmigrante. Según su situación, puede haber
+            diferentes formas para obtener la ciudadanía.
           </p>
+
+          <div className="item">
+            <ul>
+              <li>
+                {" "}
+                <strong>Naturalización</strong> es el proceso por medio del cual
+                se otorga la ciudadanía estadounidense a un ciudadano extranjero
+                después que este haya cumplido con los requisitos establecidos
+                por el Congreso de los Estados Unidos en la Ley de Inmigración y
+                Nacionalidad (INA, por sus siglas en inglés).{" "}
+              </li>
+
+              <li>
+                {" "}
+                <strong>Adquisición</strong> de ciudadanía a través de padres estadounidenses al nacer y otra después de haber nacido, pero antes de cumplir los 18 años de edad.{" "}
+              </li>
+            </ul>
+          </div>
         </Data>
 
         <Data
