@@ -15,8 +15,10 @@ const Footer = () => {
       <div className="copy">
         <p>&copy; 2022 Taxes JMJ todos los derechos reservados</p>
         <p>
-          <span>NO</span> somos abogados y <span>NO</span> damos asesoría legal.
+          <span>NO</span> somos abogados y <span>NO</span> damos consejos ni
+          asesorías legales.
         </p>
+        <p>Proporcionamos responsabilidad y eficiencia en sus trámites</p>
       </div>
 
       <div className="img">

@@ -1,10 +1,17 @@
 import React from "react";
+import { useForm } from "@formspree/react";
+
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlinePhone } from "react-icons/ai";
-import {AiOutlineWhatsApp} from 'react-icons/ai';
-import {AiOutlineInstagram} from 'react-icons/ai';
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("mayklzpr");
+  if (state.succeeded) {
+    return <div>El email ha sido enviado!</div>;
+  }
+
   return (
     <section id="contact_section">
       <div className="container">
@@ -16,7 +23,11 @@ const Contact = () => {
             necesites a la mayor brevedad posible.
           </p>
 
-          <form action="">
+          <form
+            action="https://formspree.io/f/mayklzpr"
+            onSubmit={handleSubmit}
+            method="POST"
+          >
             <div className="item">
               <label htmlFor="nombre">Nombre</label>
               <input type="text" name="nombre" id="nombre" />
@@ -51,12 +62,24 @@ const Contact = () => {
 
             <div className="item">
               <AiOutlineWhatsApp className="icon" />
-              <a href="https://walink.co/24fc12" target="_blank" rel="noreferrer">Envíanos un mensaje</a>
+              <a
+                href="https://walink.co/24fc12"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Envíanos un mensaje
+              </a>
             </div>
 
             <div className="item">
               <AiOutlineInstagram className="icon" />
-              <a href="https://instagram.com/taxesjmj" target="_blank" rel="noreferrer">Siguenos en Instagram</a>
+              <a
+                href="https://instagram.com/taxesjmj"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Siguenos en Instagram
+              </a>
             </div>
           </div>
         </div>
