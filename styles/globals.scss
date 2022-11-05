@@ -58,10 +58,6 @@ p {
 }
 
 #about_section {
-  position: relative;
-  overflow: hidden;
-
-  z-index: 1;
 
   .grid {
     display: grid;
@@ -122,13 +118,13 @@ p {
   }
 
   .circle1 {
-    top: -1.8rem;
-    right: -1.8rem;
+    top: -30px;
+    right: -30px;
   }
 
   .circle2 {
-    bottom: -1.8rem;
-    left: -1.8rem;
+    bottom: -30px;
+    left: -30px;
   }
 
   @media screen and (min-width: 1024px) {

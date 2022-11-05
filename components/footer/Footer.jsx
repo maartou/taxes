@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="permalinks">
-        <Link href="#nostros">Nosotros</Link>
+        <Link href="#nosotros">Nosotros</Link>
         <Link href="#servicios">Servicios</Link>
         <Link href="#contacto">Contacto</Link>
       </div>

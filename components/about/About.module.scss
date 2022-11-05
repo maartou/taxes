@@ -3,6 +3,11 @@
 .section {
     background: rgb(239, 239, 239);
     padding: 3rem 0;
+
+    position: relative;
+    overflow: hidden;
+  
+    z-index: 1;  
 }
 
 .container {
@@ -15,20 +20,17 @@
 }
 
 .img_container {
-    width: 100%;
     max-width: 28rem;
     margin: 0 auto;
-    height: 20rem;
-    border: 1px solid black;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    img {
+        border-radius: 12px;
+    }
 }
 
 .foto {
     p {
         margin-top: 1rem;
+        text-align: center;
     }
 }
 
@@ -57,6 +59,8 @@
 
     .container {
         grid-template-columns: 2fr 1fr;
+        place-items: center;
+        gap: 1rem;
     }
 
 }

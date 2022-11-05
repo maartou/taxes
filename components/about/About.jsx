@@ -1,6 +1,9 @@
 import React from "react";
 import style from "./About.module.scss";
 
+import img from '../../public/img/josdaly.jpg'
+import Image from "next/image";
+
 import { BiMedal } from "react-icons/bi";
 import { BiHappyBeaming } from "react-icons/bi";
 import { HiOutlineDocumentText } from "react-icons/hi";
@@ -60,7 +63,7 @@ const About = () => {
 
         <div className={style.foto}>
           <div className={style.img_container}>
-            Foto
+            <Image src={img} alt="josdaly marin" />
           </div>
           <p>
             Soy una persona emprendedora, constante y comprometida. Siempre
