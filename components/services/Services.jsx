@@ -132,7 +132,9 @@ const Services = () => {
 
               <li>
                 {" "}
-                <strong>Adquisición</strong> de ciudadanía a través de padres estadounidenses al nacer y otra después de haber nacido, pero antes de cumplir los 18 años de edad.{" "}
+                <strong>Adquisición</strong> de ciudadanía a través de padres
+                estadounidenses al nacer y otra después de haber nacido, pero
+                antes de cumplir los 18 años de edad.{" "}
               </li>
             </ul>
           </div>
@@ -151,8 +153,11 @@ const Services = () => {
           </p>
 
           <p>
-            Si tuviste un accidente de transito o laboral contáctame para
-            ayudarte con el abogado HINES a resolver tu caso.
+            No importa el estatus legal para establecer la demanda, además, la
+            persona afectada no tiene necesidad de pagar nada. La persona
+            afectada también recibe tratamiento médico y una compensación. Si
+            tuviste un accidente de transito o laboral contáctame para ayudarte
+            con el abogado HINES a resolver tu caso.
           </p>
         </Data>
 
