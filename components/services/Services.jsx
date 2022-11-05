@@ -79,12 +79,6 @@ const Services = () => {
                 encuentran en USA)
               </li>
             </ul>
-            <p>
-              Nota: Se necesita copia de TODO el pasaporte desde la portada
-              hasta la última página. Si tiene dos pasaportes, se necesitan
-              copias de todo el pasaporte vigente y del pasaporte vencido donde
-              está la visa de turista o la visa del estatus de entrada.
-            </p>
           </div>
         </Data>
 
