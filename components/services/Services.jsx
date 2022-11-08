@@ -190,6 +190,32 @@ const Services = () => {
             Unidos.
           </p>
         </Data>
+
+        <Data
+          title="Permiso de viaje"
+          short="Si usted tiene TPS y desea viajar fuera de Estados Unidos, debe solicitar una autorización de viaje. Posteriormente si UScis aprueba su solicitud se expide Formulario I-512T, Autorización de Viaje de un No Ciudadano a Estados Unidos, que servirá como evidencia del consentimiento anticipado de DHS para que usted viaje fuera de Estados Unidos."
+        >
+          <p>
+            Si un oficial del Servicio de Aduanas y Protección Fronteriza de
+            Estados Unidos (CBP) determina que usted es elegible, lo admitirá en
+            TPS a su retorno.
+          </p>
+          <p>
+            Es importante resaltar que Si usted tiene TPS y sale de Estados
+            Unidos sin primero obtener la autorización de viaje de TPS, podría
+            perder su TPS y es posible que no pueda volver a entrar a Estados
+            Unidos. En caso de tener una solicitud de TPS en trámite y sale de
+            Estados Unidos sin primero obtener un permiso adelantado, podremos
+            denegar su solicitud al TPS y no podrá reingresar en Estados Unidos.
+          </p>
+          <p>
+            Si todavía estamos en proceso de adjudicar su solicitud de TPS,
+            podría perderse notificaciones importantes de USCIS, como
+            solicitudes de evidencia adicional, mientras está fuera de Estados
+            Unidos. Si usted no responde a estas solicitudes USCIS denegarle su
+            solicitud.
+          </p>
+        </Data>
       </div>
     </section>
   );
